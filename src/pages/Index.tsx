@@ -68,8 +68,8 @@ const Index = () => {
                 description: "Developed Python utilities for dataset cleaning and transformation, reducing processing time by 25%. Led end-to-end MLOps for IT applications."
               },
               {
-                title: "Business Insight Manager",
-                company: "Chicfila",
+                title: "Business Insight Manager (Freelance Project)",
+                company: "Chick-fil-A",
                 period: "August 2023 - Present",
                 description: "Conducted data-driven sales performance analysis and led a team of 20+ employees."
               },
