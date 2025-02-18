@@ -2,7 +2,7 @@
 import { useEffect, useRef } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, GitHub, Linkedin, ChevronDown } from "lucide-react";
+import { Mail, Github, Linkedin, ChevronDown } from "lucide-react";
 
 const Index = () => {
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -42,7 +42,7 @@ const Index = () => {
             </a>
             <a href="https://github.com/harishrao" className="inline-block">
               <Button variant="outline" size="icon">
-                <GitHub className="h-5 w-5" />
+                <Github className="h-5 w-5" />
               </Button>
             </a>
             <a href="https://linkedin.com/in/harishrao" className="inline-block">
