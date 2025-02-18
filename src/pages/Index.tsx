@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -31,9 +30,6 @@ const Index = () => {
           <h1 className="text-4xl md:text-6xl font-bold mb-6 appear">
             Harish Rao Yadagiri
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-8 appear">
-            Software Engineer & Data Scientist
-          </p>
           <div className="flex gap-4 justify-center mb-12 appear">
             <a href="mailto:harishrao@usf.edu" className="inline-block">
               <Button variant="outline" size="icon">
