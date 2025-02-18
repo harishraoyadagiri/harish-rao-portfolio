@@ -69,7 +69,7 @@ const Index = () => {
               },
               {
                 title: "Business Insight Manager",
-                company: "Navashi Hyderabad House",
+                company: "Chicfila",
                 period: "August 2023 - Present",
                 description: "Conducted data-driven sales performance analysis and led a team of 20+ employees."
               },
