@@ -1,7 +1,8 @@
+
 import { useEffect, useRef } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Github, Linkedin, ChevronDown } from "lucide-react";
+import { Mail, Github, Linkedin, ChevronDown, Code2, Database, Terminal, GitBranch, Monitor, Award } from "lucide-react";
 
 const Index = () => {
   const observerRef = useRef<IntersectionObserver | null>(null);
@@ -31,17 +32,17 @@ const Index = () => {
             Harish Rao Yadagiri
           </h1>
           <div className="flex gap-4 justify-center mb-12 appear">
-            <a href="mailto:harishrao@usf.edu" className="inline-block">
+            <a href="mailto:harishraoyadagiri@gmail.com" className="inline-block">
               <Button variant="outline" size="icon">
                 <Mail className="h-5 w-5" />
               </Button>
             </a>
-            <a href="https://github.com/harishrao" className="inline-block">
+            <a href="https://github.com/harishraoyadagiri" className="inline-block">
               <Button variant="outline" size="icon">
                 <Github className="h-5 w-5" />
               </Button>
             </a>
-            <a href="https://linkedin.com/in/harishrao" className="inline-block">
+            <a href="https://www.linkedin.com/in/harishrao0724/" className="inline-block">
               <Button variant="outline" size="icon">
                 <Linkedin className="h-5 w-5" />
               </Button>
@@ -96,30 +97,37 @@ const Index = () => {
             {[
               {
                 category: "Programming",
-                skills: "Python, Pandas, NumPy, SQL, R, C++, JavaScript, C"
+                skills: "Python, Pandas, NumPy, SQL, R, C++, JavaScript, C",
+                icon: <Code2 className="h-6 w-6 mb-3" />
               },
               {
                 category: "Cloud Platforms",
-                skills: "AWS EC2, S3, Lambda, RedShift, Google Cloud, Azure"
+                skills: "AWS EC2, S3, Lambda, RedShift, Google Cloud, Azure",
+                icon: <Database className="h-6 w-6 mb-3" />
               },
               {
                 category: "Databases & DevOps",
-                skills: "MongoDB, MySQL, Oracle SQL, Docker, Kubernetes"
+                skills: "MongoDB, MySQL, Oracle SQL, Docker, Kubernetes",
+                icon: <Terminal className="h-6 w-6 mb-3" />
               },
               {
                 category: "Tools",
-                skills: "Git, Github Actions, Tableau, PowerBI, GIA"
+                skills: "Git, Github Actions, Tableau, PowerBI, GIA",
+                icon: <GitBranch className="h-6 w-6 mb-3" />
               },
               {
                 category: "Operating Systems",
-                skills: "Windows, Linux, Unix, macOS"
+                skills: "Windows, Linux, Unix, macOS",
+                icon: <Monitor className="h-6 w-6 mb-3" />
               },
               {
                 category: "Certifications",
-                skills: "AI Associate (Salesforce), GenerativeAI Fundamentals"
+                skills: "AI Associate (Salesforce), GenerativeAI Fundamentals",
+                icon: <Award className="h-6 w-6 mb-3" />
               }
             ].map((skillSet, index) => (
               <Card key={index} className="p-6 glass appear">
+                {skillSet.icon}
                 <h3 className="text-lg font-semibold mb-3">{skillSet.category}</h3>
                 <p className="text-sm text-muted-foreground">{skillSet.skills}</p>
               </Card>
@@ -180,13 +188,13 @@ const Index = () => {
           </p>
           <div className="flex gap-4 justify-center appear">
             <Button asChild>
-              <a href="mailto:harishrao@usf.edu">
+              <a href="mailto:harishraoyadagiri@gmail.com">
                 <Mail className="mr-2 h-4 w-4" />
                 Email Me
               </a>
             </Button>
             <Button variant="outline" asChild>
-              <a href="https://linkedin.com/in/harishrao">
+              <a href="https://www.linkedin.com/in/harishrao0724/">
                 <Linkedin className="mr-2 h-4 w-4" />
                 LinkedIn
               </a>
