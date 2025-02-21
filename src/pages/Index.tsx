@@ -1,4 +1,3 @@
-
 import { useEffect, useRef } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -26,7 +25,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center relative section-padding">
+      <section className="min-h-screen flex items-center justify-center relative section-padding bg-gradient-to-b from-sky-400/20 to-white/30">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 appear">
             Harish Rao Yadagiri
@@ -49,6 +48,24 @@ const Index = () => {
             </a>
           </div>
           <ChevronDown className="w-6 h-6 absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce" />
+        </div>
+      </section>
+
+      {/* About Me Section */}
+      <section className="section-padding bg-gradient-to-b from-white/30 to-sky-400/20">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold mb-12 text-center appear">About Me</h2>
+          <div className="photo-grid appear">
+            <div className="photo-card">
+              <img src="/lovable-uploads/1aabd97d-c057-4f40-a28b-760cdbda11ac.png" alt="At the beach" className="rounded-xl" />
+            </div>
+            <div className="photo-card">
+              <img src="/lovable-uploads/70d1f9c1-d83f-464a-8e3c-c33cf6a7ea15.png" alt="In the mountains" className="rounded-xl" />
+            </div>
+            <div className="photo-card">
+              <img src="/lovable-uploads/2d08e66d-e6cb-464c-93a2-039859e51600.png" alt="At sunset" className="rounded-xl" />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -90,7 +107,7 @@ const Index = () => {
       </section>
 
       {/* Skills Section */}
-      <section className="section-padding">
+      <section className="section-padding bg-gradient-to-b from-sky-400/20 to-white/30">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-center appear">Skills</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -137,7 +154,7 @@ const Index = () => {
       </section>
 
       {/* Education Section */}
-      <section className="section-padding bg-secondary/50">
+      <section className="section-padding bg-gradient-to-b from-white/30 to-sky-400/20">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-center appear">Education</h2>
           <Card className="p-8 glass appear">
@@ -152,7 +169,7 @@ const Index = () => {
       </section>
 
       {/* Projects Section */}
-      <section className="section-padding">
+      <section className="section-padding bg-gradient-to-b from-sky-400/20 to-white/30">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl font-bold mb-12 text-center appear">Projects</h2>
           <div className="space-y-8">
@@ -180,7 +197,7 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="section-padding bg-secondary/50">
+      <section className="section-padding bg-gradient-to-b from-white/30 to-sky-400/20">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8 appear">Get in Touch</h2>
           <p className="text-lg text-muted-foreground mb-8 appear">

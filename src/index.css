@@ -34,6 +34,8 @@
   }
   body {
     @apply bg-background text-foreground antialiased;
+    background: linear-gradient(180deg, #87CEEB 0%, #E0F6FF 100%);
+    min-height: 100vh;
   }
   html {
     @apply scroll-smooth;
@@ -55,5 +57,17 @@
   
   .appear.show {
     @apply opacity-100 translate-y-0;
+  }
+
+  .photo-grid {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-6;
+  }
+
+  .photo-card {
+    @apply relative overflow-hidden rounded-xl aspect-square;
+  }
+
+  .photo-card img {
+    @apply object-cover w-full h-full transition-transform duration-300 hover:scale-105;
   }
 }
